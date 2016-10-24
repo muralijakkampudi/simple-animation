@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.anim_container {
+    width: 1000px;
+    background-color: aquamarine;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+}
+
+.common_part{
+	background: black;
+    height: 350px;
+    padding: 0px;
+    width: 350px;
+	margin:0px;
+    overflow: hidden;
+}
+
+.common_part1{
+	background: aquamarine;
+    height: 350px;
+    padding: 0px;
+    width: 350px;
+    overflow: hidden;
+	margin:0px;
+}
+
+.box1{
+	background:#98bf21;
+	height:100px;
+	width:100px;
+    padding: 0px;
+	position:absolute;
+	border-radius:50px;
+}
+
+.box2{
+	background:#98bf21;
+	height:100px;
+	width:50px;
+    padding: 0px;
+	position:absolute;
+	margin-left:250px;
+}
+
+.box3{
+	background:#98bf21;
+	height:70px;
+	width:100px;
+    padding: 0px;
+	position:absolute;
+	margin-left:250px;
+	margin-top:250px;
+	border-radius:50px;
+}
+
+.box4{
+	background:#98bf21;
+	height:100px;
+    padding: 0px;
+	width:100px;
+	position:absolute;
+	margin-top:250px;
+}
+
+.box5{
+	background:#98bf21;
+	height:100px;
+    padding: 0px;
+	width:100px;
+	position:absolute;
+	margin-top:250px;
+}
+
+.box6{
+	background:#98bf21;
+	height:100px;
+    padding: 0px;
+	width:100px;
+	position:absolute;
+	margin-left:250px;
+}
+
+.box7{
+	background:#98bf21;
+	height:100px;
+    padding: 0px;
+	width:100px;
+	position:absolute;
+	margin-top:250px;
+}
+
+.box8{
+	background:#98bf21;
+	height:100px;
+	width:100px;
+    padding: 0px;
+	position:absolute;
+}
+
+
+</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+var x1 = 0;
+var x2 = 0;
+var x3 = 0;
+$("#c").addClass("commonclass3");
+$("#h").addClass("commonclass3");
+$("#m").addClass("commonclass3");
+$("#r").addClass("commonclass3");
+$("#w").addClass("commonclass3");
+$("#d").addClass("commonclass");
+$("#e").addClass("commonclass");
+$("#i").addClass("commonclass");
+$("#j").addClass("commonclass");
+$("#n").addClass("commonclass");
+$("#o").addClass("commonclass");
+$("#s").addClass("commonclass");
+$("#t").addClass("commonclass");
+$("#x").addClass("commonclass");
+$("#part1").addClass("commonclass1");
+$("#part3").addClass("commonclass1");
+$("#part5").addClass("commonclass1");
+$("#part7").addClass("commonclass1");
+$("#part9").addClass("commonclass1");
+$("#part2").addClass("commonclass2");
+$("#part4").addClass("commonclass2");
+$("#part6").addClass("commonclass2");
+$("#part8").addClass("commonclass2");
+
+
+
+/*
+
+
+$(".commonclass3").mouseover(function(){
+if(x3==0){
+$(".commonclass3").css("background-image","url(' bg3.gif ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");
+x3=1;
+}
+else{
+$(".commonclass3").css("background-image","url()").css("background-color","#98bf21");
+x3=0;
+}
+});
+
+$(".commonclass").mouseover(function(){
+if(x1==0){
+$(".commonclass").css("background-image","url(' bg.jpg ')").css("background-color","transparent");
+x1=1;
+}
+else{
+$(".commonclass").css("background-image","url()").css("background-color","#98bf21");
+x1=0;
+}
+});
+
+
+
+$(".commonclass1").mouseover(function(){
+$(".commonclass1").css("background-image","url('bg.jpg')");
+});
+$(".commonclass1").mouseout(function(){
+$(".commonclass1").css("background-image","url()");
+});
+*/
+
+
+
+/*$
+
+
+$(".commonclass2").mouseover(function(){
+$(".commonclass2").css("background-image","url('bg1.jpg')");
+});
+$(".commonclass2").mouseout(function(){
+$(".commonclass2").css("background-image","url()");
+});
+
+
+$(".box1").mouseover(function(){
+if(x1==0){
+$(".box1").css("background-image","url(' icon.gif ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");
+x1=1;
+}
+else{
+$(".box1").css("background-image","url('')").css("background-color","#98bf21");
+x1=0;
+}
+});
+
+(".box1").mouseout(function(){
+$(".box1").css("background-image","url('')").css("background-color","#98bf21");
+});*/
+
+
+
+    $("#start").click(function(){
+setInterval(function(){
+setTimeout(function(){$(".commonclass1").css("background-image","url('bg.jpg')");},100);
+setTimeout(function(){$(".commonclass1").css("background-image","url('bg2.jpg')");},1000);
+},1000);
+setInterval(function(){
+setTimeout(function(){$("#g,#l,#q").css("background-image","url('')").css("background-color","blue").css("width","150px").css("height","60px");},100);
+setTimeout(function(){$("#g,#l,#q").css("background-color","red").css("width","70px").css("height","160px");},200);
+// setTimeout(function(){$("#g,#l,#q").css("background-image","url('bg6.jpg')").css("width","100px").css("height","200px").css("border-radius","10px").css("background-repeat","no-repeat").css("background-size","cover");},700);
+},300);
+setInterval(function(){
+setTimeout(function(){$("#b,#v").css("background-color","red").css("width","70px").css("height","30px");},100);
+setTimeout(function(){$("#b,#v").css("background-color","blue").css("width","30px").css("height","70px");},200);
+},300);
+setInterval(function(){
+setTimeout(function(){$(".commonclass2").css("background-image","url('bg1.jpg')");},100);
+setTimeout(function(){$(".commonclass2").css("background-image","url('bg2.jpg')");},1000);
+},1100);
+setInterval(function(){
+setTimeout(function(){$(".commonclass").css("background-image","url('bg.jpg')");},100);
+setTimeout(function(){$(".commonclass").css("background-image","url(' bg4.gif ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");},200);
+},300);
+setInterval(function(){
+setTimeout(function(){$(".commonclass3").css("background-image","url(' bg3.gif ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");},40);
+setTimeout(function(){$(".commonclass3").css("background-image","url()");},400);
+},440);
+setInterval(function(){
+setTimeout(function(){$(".box1").css("background-image","url(' icon.gif ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");},150);
+setTimeout(function(){$(".box1").css("background-image","url(' bg5.jpg ')").css("background-color","transparent").css("background-repeat","no-repeat").css("background-size","contain");},700);
+},850);
+	var x = 0;
+while(x < 2000){
+$("#a").animate({top: '250px'},1500).animate({left: '250px'},1000).animate({top: '29px'},900).animate({left: '8px'},3000);
+$("#b").animate({top: '250px'},2000).animate({marginLeft: '8px'},1200).animate({top: '29px'},100).animate({marginLeft: '250px'},500);
+$("#c").animate({marginLeft: '8px'},2000).animate({marginTop: '29px'},300).animate({marginLeft: '250px'},3000).animate({marginTop: '250px'},1000);
+$("#d").animate({marginTop: '0px'},3000).animate({left: '250px'},700).animate({marginTop: '250px'},400).animate({left: '8px'},100);
+$("#e").animate({left: '250px'},2000).animate({marginTop: '0px'},2000).animate({left: '8px'},3000).animate({marginTop: '250px'},2000);
+$("#f").animate({top: '250px'},1500).animate({left: '250px'},1000).animate({top: '29px'},400).animate({left: '8px'},3000);
+$("#g").animate({marginLeft: '8px'},1700).animate({top: '250px'},1500).animate({marginLeft: '250px'},500).animate({top: '29px'},100);
+$("#h").animate({marginTop: '29px'},1000).animate({marginLeft: '8px'},1000).animate({marginTop: '250px'},1000).animate({marginLeft: '250px'},1000);
+$("#i").animate({marginTop: '0px'},1000).animate({left: '250px'},1200).animate({marginTop: '250px'},800).animate({left: '8px'},100);
+$("#j").animate({marginLeft: '8px'},2000).animate({marginTop: '29px'},2000).animate({marginLeft: '250px'},2000).animate({marginTop: '250px'},2000);
+$("#k").animate({left: '250px'},1000).animate({top: '250px'},1500).animate({left: '8px'},3000).animate({top: '29px'},400);
+$("#l").animate({top: '250px'},200).animate({marginLeft: '8px'},1300).animate({top: '29px'},300).animate({marginLeft: '250px'},500);
+$("#m").animate({marginTop: '29px'},3000).animate({marginLeft: '8px'},2000).animate({marginTop: '250px'},1000).animate({marginLeft: '250px'},3000);
+$("#n").animate({marginTop: '0px'},3000).animate({left: '250px'},1100).animate({marginTop: '250px'},100).animate({left: '8px'},100);
+$("#o").animate({left: '250px'},2000).animate({marginTop: '0px'},2000).animate({left: '0px'},2000).animate({marginTop: '250px'},2000);
+$("#p").animate({top: '250px'},1500).animate({left: '250px'},1000).animate({left: '250px'},1000).animate({top: '29px'},400).animate({left: '8px'},3000);
+$("#q").animate({marginLeft: '8px'},1800).animate({top: '250px'},2000).animate({marginLeft: '250px'},500).animate({top: '29px'},100);
+$("#r").animate({marginLeft: '8px'},2000).animate({marginTop: '29px'},500).animate({marginLeft: '250px'},1500).animate({marginTop: '250px'},1000);
+$("#s").animate({left: '250px'},3000).animate({marginTop: '0px'},1300).animate({left: '8px'},100).animate({marginTop: '250px'},100);
+$("#t").animate({top: '250px'},2000).animate({marginLeft: '8px'},2000).animate({top: '29px'},2000).animate({marginLeft: '250px'},2000);
+$("#u").animate({left: '250px'},1000).animate({top: '250px'},1500).animate({left: '8px'},3000).animate({top: '29px'},400);
+$("#v").animate({top: '250px'},1500).animate({marginLeft: '8px'},400).animate({top: '29px'},700).animate({marginLeft: '250px'},500);
+$("#w").animate({marginTop: '29px'},2100).animate({marginLeft: '8px'},2000).animate({marginTop: '250px'},1000).animate({marginLeft: '250px'},3000);
+$("#x").animate({marginTop: '0px'},1000).animate({left: '250px'},300).animate({marginTop: '250px'},500).animate({left: '8px'},100);
+x++;
+//$("#stop").click(function(){
+//goto start;
+//alert("hai");
+//});
+}
+
+//start: alert("hii");
+   /* $("#a").animate({left: '255px'},3000,my()).css("backgroundColor","black");
+    });
+function my(){
+setTimeout(function(){$("#b").animate({top: '255px'},3000);});
+}*/
+ });
+
+});
+</script>
+</head>
+<body>
+
+
+<div class="container">
+<div class="row">
+<div id="part1" class="col-sm-4 common_part">
+<div id="a" class="box1"></div>
+<div id="b" class="box2"></div>
+<div id="c" class="box3"></div>
+<div id="d" class="box4"></div>
+</div>
+<div id="part2" class="col-sm-4 common_part1">
+<div id="e" class="box5"></div>
+</div>
+<div id="part3" class="col-sm-4 common_part">
+<div id="f" class="box1"></div>
+<div id="g" class="box2"></div>
+<div id="h" class="box3"></div>
+<div id="i" class="box4"></div>
+</div>
+</div>
+<div class="row">
+<div id="part4" class="col-sm-4 common_part1">
+<div id="j" class="box6"></div>
+</div>
+<div id="part5" class="col-sm-4 common_part1">
+<div id="k" class="box1"></div>
+<div id="l" class="box2"></div>
+<div id="m" class="box3"></div>
+<div id="n" class="box4"></div>
+</div>
+<div id="part6" class="col-sm-4 common_part1">
+<div id="o" class="box7"></div>
+</div>
+</div>
+<div class="row">
+<div id="part7" class="col-sm-4 common_part">
+<div id="p" class="box1"></div>
+<div id="q" class="box2"></div>
+<div id="r" class="box3"></div>
+<div id="s" class="box4"></div>
+</div>
+<div id="part8" class="col-sm-4 common_part1">
+<div id="t" class="box8"></div>
+</div>
+<div id="part9" class="col-sm-4 common_part">
+<div id="u" class="box1"></div>
+<div id="v" class="box2"></div>
+<div id="w" class="box3"></div>
+<div id="x" class="box4"></div>
+</div>
+</div>
+<button id="start">Start Animation</button>
+</div>
+</body>
+</html>
